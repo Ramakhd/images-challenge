@@ -1,0 +1,33 @@
+.Appcontainer{
+
+}
+.headerStyle{
+    position: fixed;
+    background-color: cornflowerblue;
+    height: 50px;
+    width: 100%;
+    top:0;
+    padding: 10px 16px;
+  
+}
+
+.ImagesListStyle{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 50px;
+    padding-top: 90px  ;
+}
+.imgStyle{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  height: 300px;
+  width: 300px;
+  object-fit: contain;
+  cursor: pointer;
+  border-radius: 10%;
+  border: 2px solid transparent;
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
