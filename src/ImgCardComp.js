@@ -2,7 +2,7 @@ import react from 'react';
 
 const ImgCardComp = ({image}) =>{
     
-    console.log("sssss" ,image);
+    console.log("img" ,image);
     return(<img src={image}/>);
     
 };
