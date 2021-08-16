@@ -1,8 +1,8 @@
 import react from 'react';
-import './App.css';
+
 
 const Header =() =>{
-    return(<div className="headerStyle">
+    return(<div className="header-style">
         <p>Header</p>
     </div>)
 };

@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ContainerComp from './ContainerComp';
-import Header from './Header';
+import Container from './component/Container';
+import Header from './component/Header';
+import './App.css';
 
 const App =() => {
   return(
     <div >
       <Header/>
-      <ContainerComp />
+      <Container />
     </div>
   );
 };

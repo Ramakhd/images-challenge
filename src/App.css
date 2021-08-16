@@ -1,42 +1,49 @@
 /*
 - Better to write app-container for the css classes, all in small letters, change all the names
 */
-.Appcontainer {
+.app-container {
 }
 
 /*
 - add left:0 not only top:0 we always need to dimensions
 - Add box-shadow for the bottom of the header, it would be nicer
 */
-.headerStyle {
+.header-style {
   position: fixed;
   background-color: cornflowerblue;
   height: 50px;
   width: 100%;
   top: 0;
+  left: 0;
   padding: 10px 16px;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 /*
 - Try display: flex with flex-flow: wrap, instead of the grid
 */
-.ImagesListStyle {
+.images-list {
   width: 100%;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  row-gap: 50px;
-  padding-top: 90px;
+  /* display: grid; */
+  /* grid-template-columns: auto auto auto auto; */
+  gap: 50px;
+  /* padding-top: 90px; */
+  padding-top: 150px;
+  display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    
 }
 /*
 - Try width: 250px and height: 170px
 */
-.imgStyle {
+.img-style {
   padding: 5px;
   display: flex;
   flex-direction: column;
   justify-self: center;
-  height: 300px;
-  width: 300px;
+  height: 170px;
+  width: 250px;
   object-fit: contain;
   cursor: pointer;
   border-radius: 10%;

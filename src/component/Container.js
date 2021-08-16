@@ -1,8 +1,8 @@
 import react, { useEffect, useState } from "react";
-import { getImages } from "./requestApi";
-import ImageComponent from "./ImagesComponent";
+import { getImages } from "../helper/requestApi";
+import Images from "./Images";
 
-const ContainerComp = () => {
+const Container = () => {
   const [dataList, setDataList] = useState([]);
 
   const getImagesData = async () => {
@@ -17,6 +17,6 @@ const ContainerComp = () => {
 
   console.log(dataList);
   //   put a condition here to check if there is images or not (conditional render)
-  return <ImageComponent data={dataList} />;
+  return <Images data={dataList} />;
 };
-export default ContainerComp;
+export default Container;
